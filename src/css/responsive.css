@@ -1,0 +1,124 @@
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: var(--spacing-lg);
+        font-size: 14px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav.active {
+        display: flex;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        flex-direction: column;
+        padding: var(--spacing-lg);
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav.active .nav-menu {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .product-list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: var(--spacing-lg);
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--spacing-lg);
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .nav-icons {
+        gap: var(--spacing-md);
+    }
+
+    .hero {
+        padding: 60px var(--spacing-lg);
+        min-height: 450px;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .hero .btn {
+        padding: var(--spacing-sm) var(--spacing-lg);
+        font-size: 14px;
+    }
+
+    .product-list {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .product-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-image {
+        height: 200px;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .filter-btn {
+        width: 100%;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .feature-icon {
+        font-size: 32px;
+    }
+}

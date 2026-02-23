@@ -1,0 +1,1 @@
+console.log('E-Commerce Landing Page Loaded');
